@@ -11,11 +11,20 @@ struct HomeView: View {
     var user : User
     @State var hoverUp : Bool = false
     
+    var dogName : String {
+        if user.dogs?.count != 0 {
+            return user.dogs![0].name! + "'s "
+        }
+        else {
+            return ""
+        }
+    }
+    
     var body: some View {
         NavigationView{
             VStack{
                 if !hoverUp{
-                    HomeViewHeader()
+                    HomeViewHeader(dogName: dogName)
                 }
                 
                 if hoverUp {
@@ -52,6 +61,8 @@ struct HomeView_Previews: PreviewProvider {
 }
 
 struct HomeViewHeader: View {
+    @State var dogName : String
+    
     var body: some View {
         VStack{
             Spacer()
@@ -66,7 +77,7 @@ struct HomeViewHeader: View {
                         .foregroundColor(midGreen)
                         .font(.system(size: 28))
                         .fontWeight(.bold)
-                    Text("Chiyo's Hooman!")
+                    Text("\(dogName)Hooman!")
                         .foregroundColor(darkGreen)
                         .font(.system(size: 28))
                         .fontWeight(.bold)
