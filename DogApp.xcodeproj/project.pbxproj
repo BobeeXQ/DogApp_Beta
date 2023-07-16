@@ -149,14 +149,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		DF84DB902A5BDF0200CCF4A8 /* Autentication */ = {
+		DF84DB902A5BDF0200CCF4A8 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				DF84DB912A5BDF3B00CCF4A8 /* View */,
 				DF84DB922A5BDF4800CCF4A8 /* ViewModel */,
 				DF84DB932A5BDF7100CCF4A8 /* Service */,
 			);
-			path = Autentication;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		DF84DB912A5BDF3B00CCF4A8 /* View */ = {
@@ -278,7 +278,7 @@
 			children = (
 				DF84DB892A5BDE6700CCF4A8 /* Root */,
 				DF84DB9C2A5BE59C00CCF4A8 /* Components */,
-				DF84DB902A5BDF0200CCF4A8 /* Autentication */,
+				DF84DB902A5BDF0200CCF4A8 /* Authentication */,
 				DF8787822A5A796700B9F88D /* Questionnaire */,
 				DF84DBA92A5BF04900CCF4A8 /* MainTab */,
 				DFF18A172A5E5EB200D80191 /* Home */,
